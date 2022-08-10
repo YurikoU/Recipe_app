@@ -6,6 +6,7 @@
 - Additional Features:   
   - retrieving JSON data from API   
   - filtering the API data by the search term   
+- [Live Site](https://delicious-recipe-app.herokuapp.com/)
 
 ## Test Accounts  
 - Administrator   
