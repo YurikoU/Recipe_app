@@ -1,0 +1,42 @@
+{{!-- Bootstrap Snippets --}}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-xl-9 mx-auto">
+      <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+        <div class="card-img-left d-none d-md-flex">
+          <!-- Background image for card set in CSS! -->
+        </div>
+        <div class="card-body p-4 p-sm-5">
+          <h5 class="card-title text-center mb-5 fw-light fs-5">{{title}}</h5>
+          <form method="post">
+            <div class="form-floating mb-3">
+              <input type="email" name="username" class="form-control" id="username" placeholder="yummy@demo.com">
+              <label for="username">Email address</label>
+            </div>
+
+            <hr>
+
+            <div class="form-floating mb-3">
+              <input type="password" name="password" class="form-control" id="password" placeholder="yummy123">
+              <label for="password">Password</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPasswordConfirm" placeholder="Confirm Password">
+              <label for="floatingPasswordConfirm">Confirm Password</label>
+            </div>
+
+            <div class="d-grid mb-2">
+              <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
+            </div>
+
+            <div class="text-center">Have an account?
+              <a class="d-block text-center mt-2 small" href="/login" title="Login" data-bs-toggle="tooltip"
+                title="Jump to the login page and login your account.">Sign In</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

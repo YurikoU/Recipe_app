@@ -1,0 +1,49 @@
+{{!-- The author can see/delete their own notes only. The admin can can see/delete everyone's. --}}
+<div class="container px-4 px-lg-5">
+  <div class="row gx-4 gx-lg-5 justify-content-center"  id="noteTableDiv">
+    <h2 class="text-center">Your Saved Recipe Ingredients</h2>
+    <h6 class="text-center">Save the recipe ingredients of your favourite recipes here, so you won't forget to buy them at the next grocery shopping.<br>To save, tap the bookmark icon on a recipe.</h6>
+    <table class="table table-warning table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col" style="width: 100px;">Added Date</th>
+          <th scope="col" class="text-center">Shopping Note</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each dataset}}
+        {{!-- If the admin logs in, all notes are visible --}}
+        {{#if_eq ../user.role 'admin'}}
+        <tr>
+          <td>{{toShortDate this.addedDate}}</td>
+          <td>{{this.note}}</td>
+          <td>
+            {{!-- Google icon --}}
+            <a href="/notes/delete/{{this._id}}" data-bs-toggle="tooltip" title="Delete this shopping note."
+              onclick="return confirmDeletion()">
+              <span class="material-symbols-outlined">delete</span>
+            </a>
+          </td>
+        </tr>
+
+        {{!-- If the user logs in, only their notes are visible --}}
+        {{else if_eq ../user.username this.username}}
+        <tr>
+          <td>{{toShortDate this.addedDate}}</td>
+          <td>{{this.note}}</td>
+          <td>
+            {{!-- Google icon --}}
+            <a href="/notes/delete/{{this._id}}" data-bs-toggle="tooltip" title="Delete this shopping note."
+              onclick="return confirmDeletion()">
+              <span class="material-symbols-outlined">delete</span>
+            </a>
+          </td>
+        </tr>
+        {{/if_eq}}
+        {{/each}}
+
+      </tbody>
+    </table>
+  </div>
+</div>

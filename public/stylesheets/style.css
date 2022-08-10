@@ -1,0 +1,124 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  /* color: #00B7FF; */
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+
+/* CSS for navbar */
+nav > div > div > form > input.form-control {
+  padding: 0 0 0 12px;
+}
+nav > div > div > form > button.btn {
+  padding: 0 20px 0 3px;
+}
+nav > div > div > form > button.btn > span {
+  vertical-align: middle;
+  line-height: 1.7;
+}
+
+
+/* CSS for index page */
+#indexHeader {
+  /* https://www.pexels.com/photo/assorted-sliced-fruits-1128678/ */
+  background-image: url("/images/index/indexPageTitleBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#indexHeader h1, p {
+  text-shadow: 1px 1px #A9A9A9;
+}
+
+#indexSection > div.container > div.row > div.col > div.card > div.card-footer > div.text-center {
+  margin: 3px;
+}
+
+/* Set the add shopping note button at the vertical center */
+.addShoppingNoteDiv {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/* CSS for review page */
+#reviewListDiv  > div {
+  margin: 40px; 
+}
+
+#reviewListDiv  > h2 {
+  margin: 17px; 
+}
+
+
+
+
+
+/* CSS for shopping note page */
+#noteTableDiv  > table {
+  margin: 40px; 
+}
+
+#reviewListDiv  > h2 {
+  margin: 17px; 
+}
+
+
+
+/* CSS for the GitHub login btn */
+.githubLogin {
+  border: rgb(206, 212, 218);
+  height: 58px;
+  width: 80px;
+  margin: 25px auto 0;
+}
+
+.githubLogin > a {
+  color: #000;
+}
+
+
+
+
+/* Make HTML elements invisible */
+.notDisplay {
+  display: none;
+}
+
+
+/* Bootstrap Snippets for login/register pages */
+.card-img-left {
+  width: 45%;
+  /* https://www.pexels.com/photo/vegetable-salad-served-on-table-with-beef-steak-in-restaurant-4551832/ */
+  background: scroll center url('/images/register/cookingPhoto.jpg');
+  background-size: cover;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+/* .btn-google {
+  color: white !important;
+  background-color: #ea4335;
+} */
+
+/* .btn-facebook {
+  color: white !important;
+  background-color: #3b5998;
+} */

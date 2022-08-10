@@ -1,0 +1,68 @@
+<!-- Bootstrap 5 Contact Form Snippet -->
+<p id="recipeId" class="notDisplay">{{recipeId}}</p>
+<div class="container px-5 my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card border-0 rounded-3 shadow-lg">
+        <div class="card-body p-4">
+          <div class="text-center">
+            <div class="h1 fw-light">{{title}}</div>
+          </div>
+
+          <form method="post">
+            <!-- Email Input -->
+            <div class="form-floating mb-3">
+              <input class="form-control notDisplay" id="username" name="username" value="{{user.username}}" readonly />
+              <label for="username">Email address</label>
+            </div>
+
+            <!-- Message Input -->
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="note" name="note" type="text" style="height: 200px;" readonly
+                required></textarea>
+              <label for="note">note</label>
+            </div>
+
+            <!-- Submit button -->
+            <div class="d-grid">
+              <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Add</button>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-outline-secondary btn-sm" id="submitButton" type="submit">cancel</button>
+            </div>
+          </form>
+          <!-- End of contact form -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CDN Link to SB Forms Scripts -->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<script>
+  var recipeIdElm = document.getElementById('recipeId');
+  if (recipeIdElm.textContent) {
+    var recipeId = recipeIdElm.innerText;
+  }
+  var textarea = document.querySelector('textarea#note');
+  // https://rapidapi.com/spoonacular/api/recipe-food-nutrition/
+  //API call header
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '723127a008msh5f0756979223977p1cc23djsnf7870823e43b',
+      'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
+    }
+  };
+  fetch(`https://${options.headers["X-RapidAPI-Host"]}/recipes/${recipeId}/ingredientWidget.json`, options)
+    .then(response => response.json())
+    .then(jsonData => {
+      //Display all ingredients of the clicked recipe
+      jsonData.ingredients.forEach(ingredient => {
+        textarea.textContent += `${ingredient.name} : ${ingredient.amount.metric.value} ${ingredient.amount.metric.unit}\n`;
+      });
+    })
+    .catch((error) => console.error('Fail to fetch data from the recipe API :(\n', error));
+</script>
