@@ -2,6 +2,10 @@
 During the pandemic, most people spent a day in their houses and had more chances to spare time to cook their meals. Also, people can barely go outside for daily exercise or relaxation like they used to, even when they feel anxiety or stress and should go outside. These significant changes encouraged people to think about healthy diets and choose them as everyday meals. Indeed, the Government of Canada posted [an article](https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/covid-19/your-eating-habits.html) in February 2021 about how people can eat healthily. Even after COVID-19, people are still aware of the importance of health and healthy eating.   
 
 
+## What users can do?     
+Public users can search and see the recipe list without signing up. Once a user registers on the site and logs in, they can add ingredients to their shopping note, so they can make sure to buy the ingredients for their next grocery shopping. The logged-in user can also write/edit/delete their reviews on the recipe. The administrator can delete users’ reviews if needed, as well as see/search the recipe list.   
+
+
 ## Test Accounts  
 - Administrator   
   - e-mail: admin@demo.com   
