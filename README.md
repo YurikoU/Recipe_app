@@ -1,11 +1,3 @@
-## Student and assignment information
-- Student name: Yuriko Uchida   
-- Student number: #200448500   
-- Assignment 2 - Part 2b   
-- Due: Aug 16, 2022   
-- Additional Features:   
-  - retrieving JSON data from API   
-  - filtering the API data by the search term   
 - [Live Site](https://delicious-recipe-app.herokuapp.com/)
 
 ## Test Accounts  
