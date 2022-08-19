@@ -3,7 +3,9 @@ During the pandemic, most people spent a day in their houses and had more chance
 
 
 ## What users can do?     
-Public users can search and see the recipe list without signing up. Once a user registers on the site and logs in, they can add ingredients to their shopping note, so they can make sure to buy the ingredients for their next grocery shopping. The logged-in user can also write/edit/delete their reviews on the recipe. The administrator can delete users’ reviews if needed, as well as see/search the recipe list.   
+Public users can search and see the recipe list without signing up. Once a user registers on the site and logs in, they can add ingredients to their shopping note, so they can make sure to buy the ingredients for their next grocery shopping. 
+Registered accounts are classified as either the general user or the administrator. Any new user who is newly registered will be given the general user role by default. The logged-in user can write recipe reviews and save personal ingredients notes so they won’t forget to buy important ingredients to cook. If the user doesn’t have their account, they can create a new one. The user can also login using their GitHub account. If you are the site administrator, you can edit/delete recipe reviews by users. Also, you can see all shopping notes by all users and delete any of them.
+
 
 
 ## Test Accounts  
