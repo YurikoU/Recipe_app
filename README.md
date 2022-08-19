@@ -1,5 +1,3 @@
-- [Live Site](https://delicious-recipe-app.herokuapp.com/)
-
 ## Test Accounts  
 - Administrator   
   - e-mail: admin@demo.com   
