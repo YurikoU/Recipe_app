@@ -1,3 +1,7 @@
+## Purpose  
+During the pandemic, most people spent a day in their houses and had more chances to spare time to cook their meals. Also, people can barely go outside for daily exercise or relaxation like they used to, even when they feel anxiety or stress and should go outside. These significant changes encouraged people to think about healthy diets and choose them as everyday meals. Indeed, the Government of Canada posted [an article](https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/covid-19/your-eating-habits.html) in February 2021 about how people can eat healthily. Even after COVID-19, people are still aware of the importance of health and healthy eating.   
+
+
 ## Test Accounts  
 - Administrator   
   - e-mail: admin@demo.com   
